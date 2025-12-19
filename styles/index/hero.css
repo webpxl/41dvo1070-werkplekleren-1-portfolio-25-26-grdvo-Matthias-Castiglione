@@ -1,7 +1,9 @@
+@import url("../global.css");
+
 .hero-section {
     display: flex;
     flex-direction: column;
-    padding: 20px 80px;
+    padding: var(--padding-vertical-20px) var(--padding-horizontal-80px);
     height: 102vh;
     justify-content: space-between;
 }
@@ -21,6 +23,7 @@
     justify-content: space-evenly;
     align-items: flex-start;
     align-content: flex-start;
+    width: 80%;
 }
 
 .hero-header p{
@@ -64,7 +67,9 @@
 #hero-body-img{
     width: 60%;
     height: 35vh;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center;
+    background-color: var(--neutral-200);
 }
 
 #hero-footer-img{

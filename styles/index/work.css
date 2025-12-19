@@ -1,0 +1,18 @@
+@import url("../global.css");
+
+.work-section{
+    height: 102vh;
+    padding: var(--padding-vertical-40px) var(--padding-horizontal-80px);
+}
+
+.work-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.work-header p{
+    font-weight: bold;
+    font-size: 1.2rem;
+}

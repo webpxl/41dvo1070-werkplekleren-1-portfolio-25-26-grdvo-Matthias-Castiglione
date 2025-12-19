@@ -1,0 +1,45 @@
+@import url("../global.css");
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: var(--padding-vertical-20px) var(--padding-horizontal-80px);
+    width: 100%;
+    position: fixed;
+}
+
+.header a{
+    text-decoration: none;
+    color: var(--text-primary);
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: var(--neutral-100);
+    padding: 2px 5px;
+    border-radius: 12px;
+    transition: ease 0.6s;
+}
+
+.header nav{
+    background-color: var(--neutral-100);
+    padding: 2px 5px;
+    border-radius: 12px;
+}
+
+/*.header-right a + a::before{
+    content: ",";
+    margin: 0 4px;
+}*/
+
+.header a:hover{
+    /*text-decoration: underline;
+    text-decoration-thickness: 0.7vh;
+    text-decoration-color: var(--primary-500);*/
+    color: var(--primary-500);
+    transition: ease 0.6s;
+}
+
+.header a:hover a::before{
+    text-decoration: none;
+}
