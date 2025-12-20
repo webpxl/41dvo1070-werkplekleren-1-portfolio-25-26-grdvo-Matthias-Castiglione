@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     color: var(--text-primary);
+    font-family: var(--font-family-rubik), sans-serif;
 }
 
 :root {
@@ -15,8 +16,19 @@
     --neutral-100: #f5f5f5;
     --neutral-200: #d7d7d7;
 
-    /* Text */
+    /* Text Colors*/
     --text-primary: #0b1215;
+
+    /* Text Families */
+    --font-family-rubik: 'Rubik', sans-serif;
+
+    /* Text Sizes */
+    --font-size-1-2rem: 1.2rem;
+    --font-size-6rem: 6rem;
+
+    /* Text Weights */
+    --font-weight-normal: 400;
+    --font-weight-bold: bold;
 
     /* Spacing */
     --padding-horizontal-80px: 80px;
@@ -26,4 +38,14 @@
 
 body{
     background: var(--neutral-100);
+}
+
+body::-webkit-scrollbar{
+    width: 0.80rem;
+}
+body::-webkit-scrollbar-track{
+    background-color: var(--neutral-100);
+}
+body::-webkit-scrollbar-thumb{
+    background-color: var(--primary-500);
 }

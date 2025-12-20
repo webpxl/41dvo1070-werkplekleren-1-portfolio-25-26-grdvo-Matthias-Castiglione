@@ -9,8 +9,8 @@
 }
 
 .hero-section h1{
-    font-size: 6rem;
-    font-weight: bold;
+    font-size: var(--font-size-6rem);
+    font-weight: var(--font-weight-bold);
 }
 
 #text-align-end{
@@ -27,8 +27,8 @@
 }
 
 .hero-header p{
-    font-weight: bold;
-    font-size: 1.2rem;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-1-2rem);
 }
 
 .hero-body{
@@ -60,8 +60,18 @@
 }
 
 .hero-footer-div p{
-    font-weight: bold;
-    font-size: 1.2rem;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-1-2rem);
+}
+
+.hero-footer-div span{
+    transition: ease-in-out 2s;
+    color: var(--text-primary);
+}
+
+.hero-footer-div:hover span{
+    transition: ease-in-out 0.6s;
+    color: var(--primary-500);
 }
 
 #hero-body-img{
