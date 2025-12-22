@@ -24,6 +24,7 @@
 
     /* Text Sizes */
     --font-size-1-2rem: 1.2rem;
+    --font-size-2-5rem: 2.5rem;
     --font-size-6rem: 6rem;
 
     /* Text Weights */
@@ -34,6 +35,13 @@
     --padding-horizontal-80px: 80px;
     --padding-vertical-20px: 20px;
     --padding-vertical-40px: 40px;
+
+    /* Transitions */
+    --transition-hyperlinks: ease 0.6s;
+}
+
+img{
+    border-radius: 25px;
 }
 
 body{
@@ -48,4 +56,25 @@ body::-webkit-scrollbar-track{
 }
 body::-webkit-scrollbar-thumb{
     background-color: var(--primary-500);
+    border-radius: 15px;
 }
+
+/* hover underline effect for hyperlinks */
+/*.expand{
+    position:relative;
+    text-decoration:none;
+    display:inline-block;
+    z-index: 1000;
+}
+.expand:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px var(--primary-500);
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+    transform-origin:100% 50%
+}
+.expand:hover:after {
+    transform: scaleX(1);
+    transform-origin:0 50%;
+}*/

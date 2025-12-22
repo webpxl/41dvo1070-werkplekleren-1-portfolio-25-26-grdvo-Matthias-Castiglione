@@ -20,10 +20,10 @@
 .hero-header {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: flex-start;
     align-content: flex-start;
-    width: 80%;
+    width: 68%;
 }
 
 .hero-header p{

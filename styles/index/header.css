@@ -16,22 +16,18 @@
     color: var(--text-primary);
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-1-2rem);
-    transition: ease 0.6s;
+    transition: var(--transition-hyperlinks);
 }
 
 .header-left, .header nav{
     background-color: var(--neutral-100);
     padding: 2px 5px;
     border-radius: 12px;
-    //box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .header a:hover{
-    /*text-decoration: underline;
-    text-decoration-thickness: 0.7vh;
-    text-decoration-color: var(--primary-500);*/
     color: var(--primary-500);
-    transition: ease 0.6s;
+    transition: var(--transition-hyperlinks);
 }
 
 .header a:hover a::before{

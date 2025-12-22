@@ -1,0 +1,61 @@
+@import url("../global.css");
+
+
+.about-section{
+    height: 106vh;
+    padding: var(--padding-vertical-40px) var(--padding-horizontal-80px);
+}
+
+.about-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.about-header p{
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-1-2rem);
+}
+
+.about-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.about-body h2{
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-6rem);
+}
+
+.about-body-description{
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    width: 25%;
+}
+
+.about-body-description a{
+    text-decoration: none;
+    color: var(--text-primary);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-1-2rem);
+    transition: var(--transition-hyperlinks);
+}
+
+.about-body-description a:hover{
+    color: var(--primary-500);
+    transition: var(--transition-hyperlinks);
+}
+
+.about-body-description p{
+    font-size: var(--font-size-1-2rem);
+}
+
+#about-body-description-img{
+    height: 55vh;
+    object-fit: contain;
+    object-position: center;
+    background-color: var(--neutral-200);
+}

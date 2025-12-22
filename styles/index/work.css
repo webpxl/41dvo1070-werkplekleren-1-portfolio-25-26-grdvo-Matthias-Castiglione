@@ -13,8 +13,8 @@
 }
 
 .work-header p{
-    font-weight: bold;
-    font-size: 1.2rem;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-1-2rem);
 }
 
 .work-preview{
@@ -63,4 +63,21 @@
     font-size: var(--font-size-1-2rem);
     max-width: 75%;
     margin-bottom: 2vh;
+}
+
+.work-footer{
+    margin-left: 20vw;
+}
+
+.work-footer a{
+    font-size: var(--font-size-2-5rem);
+    font-weight: var(--font-weight-bold);
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: var(--transition-hyperlinks);
+}
+
+.work-footer a:hover{
+    color: var(--primary-500);
+    transition: var(--transition-hyperlinks);
 }
