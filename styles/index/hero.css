@@ -13,10 +13,6 @@
     font-weight: var(--font-weight-bold);
 }
 
-#text-align-end{
-    text-align: end;
-}
-
 .hero-header {
     display: flex;
     flex-direction: row;

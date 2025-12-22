@@ -59,6 +59,10 @@ body::-webkit-scrollbar-thumb{
     border-radius: 15px;
 }
 
+.text-align-end{
+    text-align: end;
+}
+
 /* hover underline effect for hyperlinks */
 /*.expand{
     position:relative;
