@@ -59,3 +59,54 @@
     object-position: center;
     background-color: var(--neutral-200);
 }
+
+/* Mobile responsive styles for about section */
+@media screen and (max-width: 600px) {
+    .about-section{
+        padding: var(--padding-vertical-40px) 20px;
+        height: auto;
+    }
+
+    .about-header{
+        display: flex;
+        width: 70%;
+        flex-direction: row;
+    }
+
+    .about-header p{
+        font-size: var(--font-size-1-2rem);
+    }
+
+    .about-body{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+
+    .about-body h2{
+        font-size: var(--font-size-2-5rem);
+        text-align: left;
+        line-height: 1.3;
+    }
+
+    .about-body-description{
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .about-body-description p{
+        font-size: var(--font-size-1-2rem);
+        line-height: 1.5;
+    }
+
+    .about-body-description a{
+        font-size: var(--font-size-1-2rem);
+    }
+
+    #about-body-description-img{
+        width: 77vw;
+        height: auto;
+        border-radius: 12px;
+    }
+}
+

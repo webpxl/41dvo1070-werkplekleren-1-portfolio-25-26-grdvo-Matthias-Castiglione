@@ -59,5 +59,63 @@
     font-weight: var(--font-weight-bold);
 }
 
+/* Mobile responsive styles for contact section */
+@media screen and (max-width: 600px) {
+    .contact-section{
+        padding: var(--padding-vertical-40px) 20px;
+        height: 95vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 
+    .contact-header{
+        display: flex;
+        width: 70%;
+        flex-direction: row;
+    }
 
+    .contact-header p{
+        font-size: var(--font-size-1-2rem);
+    }
+
+    .contact-header p:last-child{
+        display: none;
+    }
+
+    .contact-body{
+        height: auto;
+        align-items: flex-start;
+        padding: 1.5rem 0;
+    }
+
+    .contact-body h1{
+        font-size: 2.2rem;
+        word-break: break-word;
+        line-height: 1.4;
+    }
+
+    .contact-footer{
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: flex-start;
+    }
+
+    .contact-footer p{
+        display: none;
+    }
+
+    .contact-footer-links{
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+
+    .contact-footer-links a{
+        font-size: var(--font-size-1-2rem);
+    }
+
+    .contact-footer-links span{
+        font-size: var(--font-size-1-2rem);
+    }
+}
