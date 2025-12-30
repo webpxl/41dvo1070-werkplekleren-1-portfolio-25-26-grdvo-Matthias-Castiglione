@@ -1,0 +1,44 @@
+@import url("../global.css");
+
+.info-section {
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding-vertical-20px) var(--padding-horizontal-80px);
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.info-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 26vh;
+    margin-top: 33vh;
+}
+
+.info-body h1{
+    font-size: var(--font-size-1-2rem);
+    font-weight: var(--font-weight-bold);
+}
+
+.info-body-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 8vh;
+}
+
+.info-body-content p{
+    font-size: var(--font-size-1-2rem);
+    font-weight: var(--font-weight-normal);
+    line-height: 1.6;
+}
+
+.info-body-hyperlinks h1{
+    font-size: var(--font-size-6rem);
+    font-weight: var(--font-weight-bold);
+}
