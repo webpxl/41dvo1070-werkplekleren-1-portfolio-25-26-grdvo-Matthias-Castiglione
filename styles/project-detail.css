@@ -1,0 +1,230 @@
+@import url("./global.css");
+
+/* Project Detail Page Styles */
+.project-detail-section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    gap: 40px;
+    padding: var(--padding-vertical-80px) var(--padding-horizontal-80px)  var(--padding-vertical-40px) var(--padding-horizontal-80px);
+}
+
+.project-detail-carousel {
+    width: 60%;
+    height: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 48px;
+    align-items: stretch;
+    scroll-snap-type: x mandatory;
+    padding-right: 20px;
+    scroll-padding-inline: 20px;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    position: relative;
+    touch-action: none; /* Improve pointer drag behavior: disable browser touch actions on desktop so JS pointer drag works reliably */
+}
+
+.project-detail-carousel::-webkit-scrollbar { display: none; height: 0; }
+
+.carousel-item {
+    /* flex: 0 0 100%; */
+    /* min-width: 100%; */
+    /* width: 100%; */
+    /* height: 100%; */
+    object-fit: cover;
+    scroll-snap-align: start;
+    display: block;
+    /* box-sizing: border-box; */
+    /* user-select: none; */
+    margin-right: 8vw;
+}
+
+.project-detail-info {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+    padding-right: 20px;
+}
+
+.project-detail-info::-webkit-scrollbar {
+    width: 6px;
+}
+
+.project-detail-info::-webkit-scrollbar-track {
+    background-color: var(--neutral-100);
+}
+
+.project-detail-info::-webkit-scrollbar-thumb {
+    background-color: var(--primary-500);
+    border-radius: 3px;
+}
+
+.detail-back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 3vh;
+    font-size: var(--font-size-1-2rem);
+    font-weight: var(--font-weight-bold);
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: var(--transition-hyperlinks);
+    width: fit-content;
+}
+
+.detail-back-link:hover {
+    color: var(--primary-500);
+    transition: var(--transition-hyperlinks);
+}
+
+.detail-title {
+    font-size: var(--font-size-6rem);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 2vh;
+    line-height: 1.2;
+}
+
+.detail-category {
+    font-size: var(--font-size-1-2rem);
+    font-weight: var(--font-weight-normal);
+    color: var(--primary-500);
+    margin-bottom: 2vh;
+}
+
+.detail-description {
+    font-size: var(--font-size-1-2rem);
+    font-weight: var(--font-weight-normal);
+    color: var(--text-primary);
+    line-height: 1.8;
+    max-width: 95%;
+    white-space: pre-wrap;
+}
+
+.carousel-hint {
+    margin-top: auto;
+    font-size: var(--font-size-1-2rem);
+    color: var(--primary-500);
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+/* Fixed navigation buttons (left/right) */
+.carousel-nav-button {
+    position: fixed; /* fixed so it doesn't move with carousel */
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(115, 143, 95, 0.85);
+    color: #fff;
+    border: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    z-index: 1000;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(11,18,21,0.12);
+}
+
+.carousel-nav-button.prev { left: 18px; }
+.carousel-nav-button.next { right: 18px; }
+
+.carousel-nav-button:disabled { opacity: 0.4; cursor: not-allowed; }
+
+/* Drag cursor states for desktop mouse users */
+.project-detail-carousel.dragging { cursor: grabbing; }
+.project-detail-carousel { cursor: grab; }
+
+/* When carousel can't scroll further, use normal cursor instead of grab */
+.project-detail-carousel.no-drag {
+    cursor: default !important;
+}
+
+/* Ensure dragging state still shows grabbing */
+.project-detail-carousel.dragging { cursor: grabbing !important; }
+
+/* Mobile responsive styles for project detail */
+@media screen and (max-width: 600px) {
+    .project-detail-section {
+        flex-direction: column;
+        height: auto;
+        padding: 80px 20px 40px;
+        gap: 2rem;
+    }
+
+    .project-detail-carousel {
+        width: 100%;
+        height: 60vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+        flex-direction: column;
+        gap: 0;
+        padding-right: 0;
+        touch-action: auto; /* allow native touch scrolling on mobile */
+    }
+
+
+    .carousel-item {
+        width: 100%;
+        height: 60vh;
+        flex: 0 0 auto;
+        min-width: auto;
+    }
+
+    .project-detail-info {
+        width: 100%;
+        position: relative;
+        top: auto;
+        overflow-y: visible;
+        padding-right: 0;
+        padding-bottom: 2rem;
+    }
+
+    .detail-title {
+        font-size: var(--font-size-2-5rem);
+        margin-bottom: 1rem;
+    }
+
+    .detail-category {
+        font-size: var(--font-size-1-2rem);
+        margin-bottom: 1rem;
+    }
+
+    .detail-description {
+        font-size: var(--font-size-1-2rem);
+        max-width: 100%;
+    }
+
+    .detail-back-link {
+        margin-bottom: 1rem;
+    }
+
+    .carousel-hint {
+        display: none;
+    }
+
+    .carousel-nav-button { display: none; }
+}

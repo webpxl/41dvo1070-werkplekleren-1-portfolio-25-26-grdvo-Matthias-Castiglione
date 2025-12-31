@@ -3,24 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Matthias Castiglione | Work</title>
+    <title>Project Detail | Matthias Castiglione</title>
     <link rel="icon" href="assets/logo.svg" type="image/svg">
 
-    <!-- Added Bootstrap CSS (CDN) -->
+    <!-- Bootstrap CSS (CDN) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS Files -->
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/global.css">
-    <link rel="stylesheet" href="styles/work/info.css">
+    <link rel="stylesheet" href="styles/project-detail.css">
 
-    <!-- google fonts -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-
-    <!-- favicon -->
-
 </head>
 <body>
     <header class="header">
@@ -34,29 +31,20 @@
             <a href="contact.html">Contact</a>
         </nav>
     </header>
+
     <main>
-        <section class="info-section">
-            <div class="info-header">
-                <p> </p>
-                <p>Currently student<br>at Hogeschool PXL</p>
-                <p>Based in Belgium</p>
-            </div>
-            <div class="info-body">
-                <h1>01/</h1>
-                <div class="info-body-content">
-                <div class="info-body-hyperlinks">
-                    <H1>School <sup>02</sup></H1>
-                    <H1>Personal <sup>02</sup></H1>
-                </div>
-                    <p>A selected set of projects that I have worked on <br>during my studies and personal time.</p>
-                </div>
-            </div>
-        </section>
-        <section class="projects-section">
-            <div class="projects-container" id="projectsContainer"></div>
+        <section class="project-detail-section" id="projectDetailSection">
+            <!-- Carousel will be injected here -->
+            <div class="project-detail-carousel" id="projectCarousel"></div>
+
+            <!-- Project Info will be injected here -->
+            <div class="project-detail-info" id="projectInfo"></div>
         </section>
     </main>
-    <script src="assets/js/mobile-nav.js"></script>
+
     <script src="assets/js/projects.js"></script>
+    <script src="assets/js/project-detail.js"></script>
+    <script src="assets/js/mobile-nav.js"></script>
 </body>
 </html>
+

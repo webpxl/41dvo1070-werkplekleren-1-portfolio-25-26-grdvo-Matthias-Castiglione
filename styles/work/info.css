@@ -5,7 +5,21 @@
     flex-direction: column;
     padding: var(--padding-vertical-20px) var(--padding-horizontal-80px);
     height: 100vh;
-    justify-content: space-between;
+    gap: 5vh;
+}
+
+.info-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 68%;
+}
+
+.info-header p{
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-1-2rem);
 }
 
 .info-body{
@@ -41,4 +55,121 @@
 .info-body-hyperlinks h1{
     font-size: var(--font-size-6rem);
     font-weight: var(--font-weight-bold);
+}
+
+/* Projects Section Styles */
+.projects-section {
+    height: auto;
+    padding: var(--padding-vertical-40px) var(--padding-horizontal-80px);
+    background: var(--neutral-100);
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 5vh;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-card h2 {
+    text-decoration: underline;
+    text-decoration-color: var(--neutral-100);
+    text-decoration-thickness: 1vh;
+    transition: ease 0.6s;
+}
+
+.project-card:hover h2 {
+    text-decoration: underline;
+    text-decoration-color: var(--primary-500);
+    text-decoration-thickness: 1vh;
+    transition: ease 0.6s;
+}
+
+.project-image {
+    width: 40%;
+    height: 60vh;
+    object-fit: cover;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    max-width: 45%;
+    top: 6vh;
+}
+
+.project-title {
+    font-size: var(--font-size-6rem);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 2vh;
+}
+
+.project-category {
+    font-size: var(--font-size-1-2rem);
+    font-weight: var(--font-weight-normal);
+    color: var(--primary-500);
+    margin-bottom: 1vh;
+}
+
+.project-description {
+    font-size: var(--font-size-1-2rem);
+    font-weight: var(--font-weight-normal);
+    color: var(--text-primary);
+    line-height: 1.6;
+    max-width: 75%;
+}
+
+/* Mobile responsive styles for projects section */
+@media screen and (max-width: 600px) {
+    .projects-section {
+        padding: var(--padding-vertical-40px) 20px;
+        height: auto;
+    }
+
+    .project-card {
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .project-image {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .project-info {
+        position: relative;
+        top: auto;
+        max-width: 100%;
+        text-align: left;
+    }
+
+    .project-title {
+        font-size: var(--font-size-2-5rem);
+        margin-bottom: 1rem;
+    }
+
+    .project-category {
+        font-size: var(--font-size-1-2rem);
+        margin-bottom: 0.5rem;
+    }
+
+    .project-description {
+        max-width: 100%;
+        font-size: var(--font-size-1-2rem);
+        margin-bottom: 1rem;
+    }
 }
