@@ -57,6 +57,44 @@
     font-weight: var(--font-weight-bold);
 }
 
+/* Category heading interactive styles */
+.info-body-hyperlinks h1.category-heading{
+    cursor: pointer;
+    color: var(--text-primary);
+    transition: color 0.25s ease, text-decoration-color 0.25s ease, font-weight 0.25s ease;
+}
+
+.info-body-hyperlinks h1.category-heading:hover{
+    /* subtle hover to match project title hover underline color */
+    /*text-decoration: underline;
+    text-decoration-color: var(--text-primary);
+    text-decoration-thickness: 1vh;*/
+    color: var(--primary-500);
+}
+
+.info-body-hyperlinks h1.category-heading:active{
+    /* visual indicator for active category: underline + slightly darker color and stronger weight */
+    /*text-decoration: underline;
+    text-decoration-color: var(--primary-500);
+    text-decoration-thickness: 1vh;
+    font-weight: 700;*/
+    color: var(--text-primary);
+}
+
+.info-body-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    align-content: flex-start;
+    width: 100%;
+    margin-top: 6vh;
+    gap: 8vw;
+}
+
+.info-body-footer p:last-child{
+    font-weight: var(--font-weight-bold);
+}
+
 /* Projects Section Styles */
 .projects-section {
     height: auto;
@@ -73,13 +111,14 @@
 .project-card {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     align-items: flex-start;
-    width: 100%;
-    margin-top: 5vh;
+    width: 97%;
+    padding-top: 5vh;
     cursor: pointer;
     text-decoration: none;
-    color: inherit;
+    justify-content: flex-start;
+    gap: 6vw;
+    margin-left: 3vw;
 }
 
 .project-card h2 {
@@ -97,7 +136,7 @@
 }
 
 .project-image {
-    width: 40%;
+    width: 46%;
     height: 60vh;
     object-fit: cover;
 }
@@ -133,6 +172,45 @@
 
 /* Mobile responsive styles for projects section */
 @media screen and (max-width: 600px) {
+    .info-section{
+        padding: 12px 20px;
+        height: auto;
+        gap: 6.5rem;
+    }
+    .info-header{
+        display: none;
+    }
+    .info-header p{
+        font-size: 0.95rem;
+        line-height: 1.4;
+    }
+    .info-body{
+        gap: 2rem;
+        display: flex;
+        flex-direction: column;
+        margin-top: 15vh;
+    }
+    #hidden-on-mobile{
+        visibility: hidden;
+    }
+    .info-body-content{
+        gap: 15vh;
+    }
+    .info-body-content h1{
+        font-size: var(--font-size-4rem);
+        text-align: left;
+        line-height: 1.3;
+    }
+    .info-body-footer{
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: flex-start;
+    }
+    .info-body-footer p{
+        text-align: left;
+        font-size: var(--font-size-1-2rem);
+    }
+
     .projects-section {
         padding: var(--padding-vertical-40px) 20px;
         height: auto;

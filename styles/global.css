@@ -46,6 +46,10 @@ img{
     border-radius: 25px;
 }
 
+.tool-icon {
+    border-radius: 0 !important;
+}
+
 body{
     background: var(--neutral-100);
 }

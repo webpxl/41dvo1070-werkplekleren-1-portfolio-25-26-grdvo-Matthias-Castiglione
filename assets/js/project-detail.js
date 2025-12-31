@@ -69,12 +69,33 @@ function loadProjectDetail() {
 
     infoContainer.innerHTML = '';
 
-    // Create and append back link
+    // Create and append back link with dynamic behavior based on referrer
     const backLink = document.createElement('a');
-    backLink.href = './work.html';
     backLink.className = 'detail-back-link';
-    backLink.textContent = 'Back to Work';
     backLink.style.cursor = 'pointer';
+
+    // Check the referrer to determine where to go back
+    const referrer = document.referrer;
+    let backUrl = './work.html';
+    let backText = 'Back to Work';
+
+    if (referrer.includes('index.html') || referrer === '' || referrer.endsWith('/')) {
+        // Coming from home page or direct navigation
+        backUrl = './index.html';
+        backText = 'Back to Home';
+    }
+
+    backLink.href = backUrl;
+    backLink.textContent = backText;
+
+    // Add click handler to scroll to project when navigating back
+    backLink.addEventListener('click', (e) => {
+        const projectId = getUrlParameter('id');
+        if (projectId) {
+            sessionStorage.setItem('scrollToProjectId', projectId);
+        }
+    });
+
     infoContainer.appendChild(backLink);
 
     const title = document.createElement('h1');
@@ -89,8 +110,30 @@ function loadProjectDetail() {
 
     const description = document.createElement('p');
     description.className = 'detail-description';
-    description.textContent = project.description;
+    description.textContent = project.longDescription;
     infoContainer.appendChild(description);
+
+    // Add tools section if tools exist
+    if (project.tools && project.tools.length > 0) {
+        const toolsContainer = document.createElement('div');
+        toolsContainer.className = 'project-tools';
+        toolsContainer.style.display = 'flex';
+        toolsContainer.style.flexDirection = 'row';
+        toolsContainer.style.gap = '12px';
+        toolsContainer.style.marginTop = '12px';
+
+        project.tools.forEach(tool => {
+            const toolImg = document.createElement('img');
+            toolImg.src = tool;
+            toolImg.alt = 'Tool';
+            toolImg.className = 'tool-icon';
+            toolImg.style.width = '40px';
+            toolImg.style.height = '40px';
+            toolsContainer.appendChild(toolImg);
+        });
+
+        infoContainer.appendChild(toolsContainer);
+    }
 
     const hint = document.createElement('p');
     hint.className = 'carousel-hint';

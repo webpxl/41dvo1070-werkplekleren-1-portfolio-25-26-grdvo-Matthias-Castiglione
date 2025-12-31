@@ -1,7 +1,7 @@
 @import url("../global.css");
 
 .work-section{
-    height: 150vh;
+    height: 158vh;
     padding: var(--padding-vertical-40px) var(--padding-horizontal-80px);
 }
 
@@ -20,10 +20,13 @@
 .work-preview{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: flex-start;
-    width: 100%;
-    margin-top: 5vh;
+    width: 97%;
+    padding-top: 8vh;
+    margin-left: 3vw;
+    gap: 5vw;
+    text-decoration: none;
 }
 
 .work-preview h2{
@@ -50,7 +53,7 @@
     display: flex;
     flex-direction: column;
     position: sticky;
-    max-width: 45%;
+    width: 45%;
     top: 6vh;
 }
 
