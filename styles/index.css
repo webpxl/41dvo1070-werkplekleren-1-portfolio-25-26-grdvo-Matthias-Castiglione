@@ -117,14 +117,14 @@
     text-decoration: underline;
     text-decoration-color: var(--neutral-100);
     text-decoration-thickness: 1vh;
-    transition: ease 0.6s;
+    transition: var(--transition-ease-06);
 }
 
 .work-preview:hover h2{
     text-decoration: underline;
     text-decoration-color: var(--primary-500);
     text-decoration-thickness: 1vh;
-    transition: ease 0.6s;
+    transition: var(--transition-ease-06);
 }
 
 .work-preview img{
@@ -161,12 +161,12 @@
     font-weight: var(--font-weight-bold);
     text-decoration: none;
     color: var(--text-primary);
-    transition: var(--transition-hyperlinks);
+    transition: var(--transition-ease-06);
 }
 
 .work-footer a:hover{
     color: var(--primary-500);
-    transition: var(--transition-hyperlinks);
+    transition: var(--transition-ease-06);
 }
 
 /* about section styles */
@@ -210,12 +210,12 @@
     color: var(--text-primary);
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-1-2rem);
-    transition: var(--transition-hyperlinks);
+    transition: var(--transition-ease-06);
 }
 
 .about-body-description a:hover{
     color: var(--primary-500);
-    transition: var(--transition-hyperlinks);
+    transition: var(--transition-ease-06);
 }
 
 .about-body-description p{

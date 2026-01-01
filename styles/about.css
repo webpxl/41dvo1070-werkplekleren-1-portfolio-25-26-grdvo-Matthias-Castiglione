@@ -45,8 +45,130 @@
 
 /* about-section styles*/
 .about-section{
-    height: 106vh;
+    height: auto;
     padding: var(--padding-vertical-40px) var(--padding-horizontal-80px);
+}
+
+.about-body-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.about-body-content h2{
+    font-size: var(--font-size-2-5rem);
+    font-weight: var(--font-weight-bold);
+    width: 50%;
+    transition: var(--transition-ease-06);
+}
+
+.about-body-content:hover{
+    color: var(--primary-500);
+    transition: var(--transition-ease-06);
+}
+
+.about-body-content p{
+    font-size: var(--font-size-1-2rem);
+    font-weight: var(--font-weight-normal);
+    margin-bottom: 6rem;
+    width: 50%;
+}
+
+.align-left{
+    align-items: flex-start;
+    margin-left: 4vw;
+}
+
+.align-right{
+    align-items: flex-end;
+    padding-right: 4vw;
+}
+
+/* personal section styles */
+.personal-section{
+    height: auto;
+    padding: var(--padding-vertical-40px) var(--padding-horizontal-80px);
+}
+
+.personal-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.personal-header p{
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-1-2rem);
+}
+
+.personal-body-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 97%;
+    padding-top: 8vh;
+    margin-left: 1vw;
+    gap: 5vw;
+    text-decoration: none;
+}
+
+.personal-body-content h2{
+    font-size: var(--font-size-2-5rem);
+    font-weight: var(--font-weight-bold);
+    //width: 60%;
+    transition: var(--transition-ease-06);
+}
+
+.personal-body-content:hover h2{
+    color: var(--primary-500);
+    transition: var(--transition-ease-06);
+}
+
+.personal-body-content p{
+    font-size: var(--font-size-1-2rem);
+    font-weight: var(--font-weight-normal);
+    margin-bottom: 6rem;
+}
+
+.personal-body-content-description{
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    width: 42%;
+    top: 8vh;
+}
+
+.personal-body-container-images{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.personal-body-content-image{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 100%;
+}
+
+
+.sticky-image{
+    height: 37vh;
+    position: sticky;
+    top: 8vh;
+}
+
+.personal-body-content-image img{
+    width: 24vw;
+    object-fit: cover;
+}
+
+.flex-reverse{
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 /* Mobile responsive styles for projects section */

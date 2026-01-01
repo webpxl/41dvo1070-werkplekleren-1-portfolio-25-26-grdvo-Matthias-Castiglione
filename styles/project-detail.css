@@ -77,13 +77,13 @@
     font-weight: var(--font-weight-bold);
     text-decoration: none;
     color: var(--text-primary);
-    transition: var(--transition-hyperlinks);
+    transition: var(--transition-ease-06);
     width: fit-content;
 }
 
 .detail-back-link:hover {
     color: var(--primary-500);
-    transition: var(--transition-hyperlinks);
+    transition: var(--transition-ease-06);
 }
 
 .detail-title {

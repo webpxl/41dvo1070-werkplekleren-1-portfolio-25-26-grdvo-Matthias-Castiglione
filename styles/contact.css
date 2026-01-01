@@ -47,12 +47,12 @@
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-1-2rem);
     margin: 0;
-    transition: var(--transition-hyperlinks);
+    transition: var(--transition-ease-06);
 }
 
 .contact-footer a:hover{
     color: var(--primary-500);
-    transition: var(--transition-hyperlinks);
+    transition: var(--transition-ease-06);
 }
 
 .contact-footer-links a{
@@ -60,12 +60,12 @@
     color: var(--text-primary);
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-1-2rem);
-    transition: var(--transition-hyperlinks);
+    transition: var(--transition-ease-06);
 }
 
 .contact-footer-links a:hover{
     color: var(--primary-500);
-    transition: var(--transition-hyperlinks);
+    transition: var(--transition-ease-06);
 }
 
 .contact-footer-links span{

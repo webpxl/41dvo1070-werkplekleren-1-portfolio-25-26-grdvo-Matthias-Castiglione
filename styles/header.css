@@ -21,7 +21,7 @@
     color: var(--text-primary);
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-1-2rem);
-    transition: var(--transition-hyperlinks);
+    transition: var(--transition-ease-06);
 }
 
 .header-left, .header nav{
@@ -32,7 +32,7 @@
 
 .header a:hover{
     color: var(--primary-500);
-    transition: var(--transition-hyperlinks);
+    transition: var(--transition-ease-06);
 }
 
 .header a:hover a::before{

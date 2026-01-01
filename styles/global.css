@@ -39,7 +39,7 @@
     --padding-vertical-80px: 80px;
 
     /* Transitions */
-    --transition-hyperlinks: ease 0.6s;
+    --transition-ease-06: ease 0.6s;
 }
 
 img{
