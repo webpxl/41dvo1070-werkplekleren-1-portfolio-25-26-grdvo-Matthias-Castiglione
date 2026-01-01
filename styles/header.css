@@ -44,11 +44,8 @@
     font-weight: var(--font-weight-bold);
 }
 
-@media screen and (min-width: 600px) {
-    .header{
-        color: red;
-    }
-    
+.header-right a:first-child{
+    display: none;
 }
 
 /* --- Mobile styles and hamburger menu (do not change existing markup) --- */
