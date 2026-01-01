@@ -13,7 +13,7 @@ const projects = [
     },
     {
          id: 2,
-         title: "Dasboard",
+         title: "Dashboard",
          category: "school",
          shortDescription: "This project was a school project where we needed to make a dashboard cv.",
          longDescription: "This project was created as part of the WPL1 course. I started by sketching several components and, with feedback from my buddies, developed two wireframes. The version shown here was the strongest, which I then refined and finished with a polished visual design.\n\nTools used for this project:",
@@ -38,7 +38,7 @@ const projects = [
         title: "Halloween Poster",
         category: "school",
         shortDescription: "this poster was a school project as part of the graphic design course.",
-        longDescription: "With this project we got a few given images where we then needed to make a good composition with and this is my result of this assignment\n\nTools used for this project:",
+        longDescription: "For this project, we were given a set of images and tasked with creating a strong visual composition. This is my final result for the assignment.\n\nTools used for this project:",
         image: "assets/images/projects/halloween project/halloween_poster_v01.png",
         images: ["assets/images/projects/halloween project/halloween_poster_v01.png", "assets/images/projects/halloween project/halloween_poster_v02.png"],
         tools: ["assets/images/tools/photoshop.png"],

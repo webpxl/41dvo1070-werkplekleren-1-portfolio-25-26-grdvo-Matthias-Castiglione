@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Matthias Castiglione</title>
-    <link rel="icon" href="assets/logo.svg" type="image/svg">
+    <link rel="icon" href="assets/images/logo.svg" type="image/svg">
 
     <!-- Added Bootstrap CSS (CDN) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -12,19 +12,13 @@
     <!-- Custom CSS Files -->
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/index/hero.css">
-    <link rel="stylesheet" href="styles/index/work.css">
-    <link rel="stylesheet" href="styles/index/about.css">
+    <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/contact.css">
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-
-    <!-- favicon -->
-
-
 </head>
 
 <body>
@@ -49,11 +43,11 @@
             </div>
             <div class="hero-body">
                 <h1>Digital<br>Designer</h1>
-                <img id="hero-body-img" src="assets/img-placeholder.png" alt="Hero Image" class="img-fluid">
+                <img id="hero-body-img" src="assets/images/photo-of-me-01.png" alt="Hero Image" class="img-fluid">
             </div>
             <div class="hero-footer">
                 <div class="hero-footer-div">
-                    <img id="hero-footer-img" src="assets/hero/arrow-down.png" alt="Scroll Indicator" class="img-fluid">
+                    <img id="hero-footer-img" src="assets/images/arrow-down.png" alt="Scroll Indicator" class="img-fluid">
                     <p>LET US BRING<br>IDEAS TO <span>LIFE</span>.</p>
                 </div>
                 <h1 class="text-align-end">Matthias<br>Castiglione</h1>
@@ -81,7 +75,7 @@
             <div class="about-body">
                 <h2>Passionate<br>Digital<br>Designer</h2>
                 <div class="about-body-description">
-                    <img id="about-body-description-img" src="assets/img-placeholder.png" alt="Profile Picture" class="img-fluid">
+                    <img id="about-body-description-img" src="assets/images/photo-of-me-02.png" alt="Profile Picture" class="img-fluid">
                     <p>
                         I'm Matthias Castiglione, a digital designer based in Belgium. I specialize in creating visually stunning and user-friendly designs that captivate audiences and drive engagement. With a keen eye for detail and a passion for innovation, I strive to bring ideas to life through my work.
                     </p>
@@ -89,57 +83,30 @@
                 </div>
             </div>
         </section>
-        <section class="contact-section">
-            <div class="contact-header">
-                <p>03/</p>
-                <p>WANT TO WORK<br>TOGETHER?</p>
-                <p>SEND ME A<br>MESSAGE</p>
-            </div>
-            <div class="contact-body">
-                <h1>Matthias.Castiglione@gmail.com</h1>
-            </div>
-            <div class="contact-footer">
-                <p>© 2025 Matthias Castiglione.<br>All rights reserved.</p>
-                <div class="contact-footer-links">
-                    <a href="https://www.linkedin.com/in/matthias-castiglione-9bb6432a6/">LinkedIn</a>
-                    <span>,</span>
-                    <a href="https://github.com/Matthias-Castiglione">GitHub</a>
-                    <span>,</span>
-                    <a href="https://www.figma.com/design/g4BurjTzGItAvFYR9Lodmb/Dashboard_Castiglione_Matthias?node-id=164-306">Dashboard</a>
-                </div>
-                <p class="text-align-end">Development Matthias Castiglione<br>Design Matthias Castiglione</p>
-            </div>
-        </section>
     </main>
+    <footer class="contact-section">
+        <div class="contact-header">
+            <p>03/</p>
+            <p>WANT TO WORK<br>TOGETHER?</p>
+            <p>SEND ME A<br>MESSAGE</p>
+        </div>
+        <div class="contact-body">
+            <h1>Matthias.Castiglione@gmail.com</h1>
+        </div>
+        <div class="contact-footer">
+            <p>© 2025 Matthias Castiglione.<br>All rights reserved. <a href="privacy.txt">Privacy Policy.</a></p>
+            <div class="contact-footer-links">
+                <a href="https://www.linkedin.com/in/matthias-castiglione-9bb6432a6/">LinkedIn</a>
+                <span>,</span>
+                <a href="https://github.com/Matthias-Castiglione">GitHub</a>
+                <span>,</span>
+                <a href="https://www.figma.com/design/g4BurjTzGItAvFYR9Lodmb/Dashboard_Castiglione_Matthias?node-id=164-306">Dashboard</a>
+            </div>
+            <p class="text-align-end">Development Matthias Castiglione<br>Design Matthias Castiglione</p>
+        </div>
+    </footer>
     <script src="assets/js/projects.js"></script>
-    <script>
-        // Populate work section with two most recent projects
-        document.addEventListener('DOMContentLoaded', () => {
-            const container = document.getElementById('work-preview-container');
-            const recentProjects = getTwoMostRecentProjects();
-
-            recentProjects.forEach(project => {
-                const previewLink = document.createElement('a');
-                previewLink.href = `project-detail.html?id=${project.id}`;
-                previewLink.className = 'work-preview';
-                previewLink.setAttribute('data-project-id', project.id);
-                previewLink.innerHTML = `
-                    <div class="work-preview-description">
-                        <h2>${project.title}</h2>
-                        <p>${project.shortDescription}</p>
-                    </div>
-                    <img src="${project.image}" alt="${project.title}" class="img-fluid">
-                `;
-
-                // Store project ID in sessionStorage when clicking
-                previewLink.addEventListener('click', () => {
-                    sessionStorage.setItem('lastViewedProjectId', project.id);
-                });
-
-                container.appendChild(previewLink);
-            });
-        });
-    </script>
+    <script src="assets/js/index.js"></script>
     <script src="assets/js/mobile-nav.js"></script>
 </body>
 </html>

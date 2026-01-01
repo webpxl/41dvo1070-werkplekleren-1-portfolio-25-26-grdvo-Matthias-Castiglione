@@ -1,4 +1,4 @@
-@import url("global.css");
+@import url("../styles/global.css");
 
 .contact-section{
     height: 102vh;
@@ -39,6 +39,20 @@
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-1-2rem);
     margin: 0;
+}
+
+.contact-footer a{
+    text-decoration: none;
+    color: var(--text-primary);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-1-2rem);
+    margin: 0;
+    transition: var(--transition-hyperlinks);
+}
+
+.contact-footer a:hover{
+    color: var(--primary-500);
+    transition: var(--transition-hyperlinks);
 }
 
 .contact-footer-links a{
