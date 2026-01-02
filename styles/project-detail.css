@@ -154,7 +154,6 @@
 .project-detail-carousel.dragging { cursor: grabbing; }
 .project-detail-carousel {
     cursor: grab;
-    background: var(--neutral-0);
 }
 
 /* When carousel can't scroll further, use normal cursor instead of grab */
@@ -182,6 +181,7 @@
         flex-direction: column;
         gap: 0;
         padding-right: 0;
+        background: var(--neutral-0);
         touch-action: auto; /* allow native touch scrolling on mobile */
     }
 
