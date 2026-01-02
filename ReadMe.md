@@ -29,6 +29,7 @@ It includes both school projects and personal projects, with interactive filteri
 - HTML5
 - CSS3 (including flexbox for layout)
 - JavaScript (dynamic filtering, DOM manipulation)
+- Figma (for UI/UX design)
 - Photoshop (for project compositing and UI mockups)
 - Blender (for 3D modeling and rendering)
 

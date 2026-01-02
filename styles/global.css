@@ -33,6 +33,7 @@
     --font-weight-bold: bold;
 
     /* Spacing */
+    --padding-horizontal-20px: 20px;
     --padding-horizontal-80px: 80px;
     --padding-vertical-20px: 20px;
     --padding-vertical-40px: 40px;
@@ -69,22 +70,8 @@ body::-webkit-scrollbar-thumb{
     text-align: end;
 }
 
-/* hover underline effect for hyperlinks */
-/*.expand{
-    position:relative;
-    text-decoration:none;
-    display:inline-block;
-    z-index: 1000;
+@media screen and (max-width: 600px) {
+    img{
+        border-radius: 12px;
+    }
 }
-.expand:after {
-    display:block;
-    content: '';
-    border-bottom: solid 3px var(--primary-500);
-    transform: scaleX(0);
-    transition: transform 250ms ease-in-out;
-    transform-origin:100% 50%
-}
-.expand:hover:after {
-    transform: scaleX(1);
-    transform-origin:0 50%;
-}*/

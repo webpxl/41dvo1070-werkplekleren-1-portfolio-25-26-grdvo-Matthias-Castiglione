@@ -5,6 +5,11 @@
     padding: var(--padding-vertical-40px) var(--padding-horizontal-80px);
 }
 
+.contact-section-on-contact-page {
+    height: 100vh;
+    padding: var(--padding-vertical-20px) var(--padding-horizontal-80px);
+}
+
 .contact-header{
     display: flex;
     flex-direction: row;
@@ -76,8 +81,16 @@
 /* Mobile responsive styles for contact section */
 @media screen and (max-width: 600px) {
     .contact-section{
-        padding: var(--padding-vertical-40px) 20px;
-        height: 95vh;
+        padding: var(--padding-vertical-40px) var(--padding-horizontal-20px);
+        height: 93vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .contact-section-on-contact-page{
+        padding: var(--padding-vertical-40px) var(--padding-horizontal-20px);
+        height: 93vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;

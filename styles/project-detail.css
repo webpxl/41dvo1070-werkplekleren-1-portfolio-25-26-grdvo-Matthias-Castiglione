@@ -188,6 +188,7 @@
         height: 60vh;
         flex: 0 0 auto;
         min-width: auto;
+        object-fit: contain;
     }
 
     .project-detail-info {
