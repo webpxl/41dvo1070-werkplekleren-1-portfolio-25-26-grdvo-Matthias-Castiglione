@@ -152,7 +152,10 @@
 
 /* Drag cursor states for desktop mouse users */
 .project-detail-carousel.dragging { cursor: grabbing; }
-.project-detail-carousel { cursor: grab; }
+.project-detail-carousel {
+    cursor: grab;
+    background: var(--neutral-0);
+}
 
 /* When carousel can't scroll further, use normal cursor instead of grab */
 .project-detail-carousel.no-drag {
@@ -167,13 +170,13 @@
     .project-detail-section {
         flex-direction: column;
         height: auto;
-        padding: 80px 20px 40px;
+        padding: var(--padding-vertical-20px) var(--padding-horizontal-20px);
         gap: 2rem;
     }
 
     .project-detail-carousel {
         width: 100%;
-        height: 60vh;
+        height: 50vh;
         overflow-y: auto;
         overflow-x: hidden;
         flex-direction: column;
@@ -185,7 +188,7 @@
 
     .carousel-item {
         width: 100%;
-        height: 60vh;
+        height: 50vh;
         flex: 0 0 auto;
         min-width: auto;
         object-fit: contain;

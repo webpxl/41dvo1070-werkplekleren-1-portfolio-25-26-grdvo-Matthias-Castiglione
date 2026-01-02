@@ -263,8 +263,12 @@
         margin-bottom: 2rem;
     }
 
+    .personal-body-content-image{
+        justify-content: center;
+    }
+
     .personal-body-content-image img {
-        width: 48%;
+        width: 43.5vw;
         height: 31vh;
     }
 }

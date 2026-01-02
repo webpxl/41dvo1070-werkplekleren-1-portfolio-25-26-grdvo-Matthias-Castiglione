@@ -236,7 +236,7 @@
     .hero-section{
         padding: 12px 20px;
         height: auto;
-        gap: 13.5rem;
+        gap: 4.5rem;
     }
     .hero-header{
         display: none;
@@ -307,6 +307,7 @@
         gap: 1.5rem;
         margin-top: 2rem;
         padding-top: 4vh;
+        margin-left: 0;
     }
 
     .work-preview img{
