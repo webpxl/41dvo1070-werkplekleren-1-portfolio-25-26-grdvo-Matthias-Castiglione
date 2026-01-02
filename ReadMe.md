@@ -1,6 +1,6 @@
 # Portfolio - Matthias Castiglione
 
-A personal portfolio showcasing web projects and UI/UX work, built as part of my educational projects for WPL1 and personal practice.
+A personal portfolio showcasing web projects and UI/UX work, built as part of my WPL1 educational projects and personal practice.
 
 ## Table of Contents
 - [Overview](#overview)
@@ -23,12 +23,13 @@ It includes both school projects and personal projects, with interactive filteri
 - **Project counters:** `<sup>` dynamically shows the number of projects in each category.
 - **Responsive design:** Mobile and desktop layouts are fine-tuned to fit the screen.
 - **Project images:** Each project includes multiple images to showcase details.
+- **Source inspection deterrence:** Basic client-side techniques are used to discourage casual source inspection. This is intended for educational purposes only and does not provide real security.
 - **Educational disclaimers:** All logos and third-party content are used for educational purposes only.
 
 ## Technologies
 - HTML5
 - CSS3 (including flexbox for layout)
-- JavaScript (dynamic filtering, DOM manipulation)
+- JavaScript (dynamic filtering, DOM manipulation, basic interaction handling)
 - Figma (for UI/UX design)
 - Photoshop (for project compositing and UI mockups)
 - Blender (for 3D modeling and rendering)

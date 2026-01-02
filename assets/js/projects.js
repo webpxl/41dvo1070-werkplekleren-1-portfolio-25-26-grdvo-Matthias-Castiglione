@@ -15,7 +15,7 @@ const projects = [
          id: 2,
          title: "Dashboard",
          category: "school",
-         shortDescription: "This project was a school project where we needed to make a dashboard cv.",
+         shortDescription: "A school project where we needed to make a dashboard cv for the WPL1 course.",
          longDescription: "This project was created as part of the WPL1 course. I started by sketching several components and, with feedback from my buddies, developed two wireframes. The version shown here was the strongest, which I then refined and finished with a polished visual design.\n\nTools used for this project:",
          image: "assets/images/projects/dashboard/dashboard_v01.png",
          images: ["assets/images/projects/dashboard/dashboard_v01.png", "assets/images/projects/dashboard/dashboard_v0.1.png"],
