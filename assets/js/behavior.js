@@ -7,8 +7,8 @@ document.addEventListener('contextmenu', function (e) {
 document.addEventListener('keydown', function (e) {
     if (
         e.key === 'F12' ||
-        (e.ctrlKey && e.shiftKey && ['I', 'C', 'J'].includes(e.key)) ||
-        (e.ctrlKey && e.key === 'U')
+        (e.ctrlKey && e.shiftKey && ['i','c','j'].includes(e.key.toLowerCase())) ||
+        (e.ctrlKey && e.key.toLowerCase() === 'u')
     ) {
         e.preventDefault();
     }
