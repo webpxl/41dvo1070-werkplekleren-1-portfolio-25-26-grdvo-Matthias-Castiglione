@@ -28,8 +28,8 @@ const projects = [
          category: "school",
          shortDescription: "A school project that was initially developed in a team and is being finalized individually (ongoing).",
          longDescription: "A school project as part of the UI design course. I worked on the ‘Video Tutorial’ feature and designed the UI for the recipe section on both desktop and mobile, as well as the app download section.\n\nTools used for this project:",
-         image: "assets/images/projects/Build&DesignABrandedUI/sitemap.png",
-         images: ["assets/images/projects/Build&DesignABrandedUI/sitemap.png", "assets/images/projects/Build&DesignABrandedUI/taskflow.png", "assets/images/projects/Build&DesignABrandedUI/landingpage.png", "assets/images/projects/Build&DesignABrandedUI/taskflow_wireframe.png"],
+         image: "assets/images/projects/BuildAndDesignABrandedUI/sitemap.png",
+         images: ["assets/images/projects/BuildAndDesignABrandedUI/sitemap.png", "assets/images/projects/BuildAndDesignABrandedUI/taskflow.png", "assets/images/projects/BuildAndDesignABrandedUI/landingpage.png", "assets/images/projects/BuildAndDesignABrandedUI/taskflow_wireframe.png"],
          tools: ["assets/images/tools/figma.png"],
          dateAdded: "2026-01-16"
     },
@@ -205,9 +205,6 @@ document.addEventListener('DOMContentLoaded', () => {
         headings.forEach(h => {
             const catText = getHeadingCategoryText(h);
             const norm = (catText || '').toLowerCase();
-
-            const root = document.documentElement;
-            const primaryColor = getComputedStyle(root).getPropertyValue('--primary-500');
 
             if (activeCategory && norm === activeCategory) {
                 // simple visual indicator: underline and bolder weight (inline so we don't change CSS files)
