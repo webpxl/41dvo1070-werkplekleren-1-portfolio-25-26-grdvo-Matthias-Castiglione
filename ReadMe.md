@@ -19,7 +19,7 @@ It includes both school projects and personal projects, with interactive filteri
 - **Dynamic project display:**
     - The two most recent projects appear on `index.html`.
     - All projects are listed on `work.html` from most recent to oldest.
-- **Category filtering:** Users can filter projects by "School" or "Personal"; clicking again resets the filter.
+- **Category filtering:** Users can filter projects by "School" or "Personal", clicking again resets the filter.
 - **Project counters:** `<sup>` dynamically shows the number of projects in each category.
 - **Responsive design:** Mobile and desktop layouts are fine-tuned to fit the screen.
 - **Project images:** Each project includes multiple images to showcase details.
@@ -46,8 +46,8 @@ No personal data is collected, stored, or shared.
 See [privacy.txt](privacy.txt) for full privacy information.
 
 ## Credits
-- **GitHub Copilot** — Assisted in writing dynamic functionality for project filtering and sorting.
-- **ChatGPT** — Helped craft clear and effective prompts for Copilot to implement features.
+- **GitHub Copilot:** Assisted in writing dynamic functionality for project filtering and sorting.
+- **ChatGPT:** Helped craft clear and effective prompts for Copilot to implement features.
 - **Inspiration:** Some UI and layout ideas were inspired by works on [Behance](https://www.behance.net/), [awwwards](https://www.awwwards.com) and other design sources.
 - Any third-party images or logos are used solely for educational purposes and remain the property of their respective owners.
 
