@@ -1,0 +1,20 @@
+@import url("../../styles/global.css");
+
+*{
+    margin: 20px;
+}
+
+.next-to-each-other{
+    display: flex;
+    flex-direction: row;
+}
+
+.pdf-container{
+    height: 75vh;
+    width: 77%;
+}
+
+.pdf-container iframe{
+    width: 100%;
+    height: 100%;
+}
